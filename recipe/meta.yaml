@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-datafactory" %}
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-mgmt-datafactory-{{ version }}.zip
-  sha256: c2af20ff178a328e05fe11bb5d5378b3cc38f637dd34de1c8530b32115948695
+  sha256: 213d4b41f74da6f735c8d5f867fa8c2b6b0bd8c91a380e24ad1156cf5480cf7b
 
 build:
   number: 0
