@@ -1,11 +1,11 @@
-About azure-mgmt-datafactory
-============================
+About azure-mgmt-datafactory-feedstock
+======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-datafactory-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Azure/azure-sdk-for-python
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-datafactory-feedstock/blob/main/LICENSE.txt)
 
 Summary: Microsoft Azure Data Factory Management Client Library for Python
 
