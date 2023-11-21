@@ -1,13 +1,13 @@
 {% set name = "azure-mgmt-datafactory" %}
-{% set version = "3.1.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-mgmt-datafactory-{{ version }}.zip
-  sha256: 96c394c43a17a1c7f57d421c638abbe3fbddf3a2ceef2ba6260eeb27a8b7cdc8
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-mgmt-datafactory-{{ version }}.tar.gz
+  sha256: 5df4cb6d57683d52ca8159410ebe7d37410a7be1bd7c04be4a323d716861b388
 
 build:
   number: 0
