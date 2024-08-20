@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-datafactory" %}
-{% set version = "8.0.0" %}
+{% set version = "9.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/azure-mgmt-datafactory-{{ version }}.tar.gz
-  sha256: 08bd59e74ca36c4927726293e05849ed468e894b70d420fce5354427b2878d0e
+  sha256: 8f54cc7b6fe391255aee9e00afd1e6663879e8636ab641cff906d2bb24c34f4e
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
     - pip
   run:
     # bumping python constraint 3.8 so we don't need typing-extensions
+    - typing-extensions >=4.6.0
     - python >=3.8
     - isodate >=0.6.1
     - azure-common >=1.1
