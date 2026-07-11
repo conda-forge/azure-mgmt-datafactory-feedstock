@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-mgmt-datafactory
-  version: "9.3.0"
+  version: 10.0.0
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: f5fdd5cd416f0ed71dfedf05dc7677b8f0e52f3428fd5b17b04c9200dd8d36b3
+  sha256: c83eeb2b092c1f1e5bb2499ffbba6fd7809a1274739930f9db1e336273405587
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -25,10 +25,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - isodate >=0.6.1
-    - azure-common >=1.1
     - azure-mgmt-core >=1.6.0
     - typing_extensions >=4.6.0
-
 tests:
   - python:
       imports:
